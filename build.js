@@ -1,7 +1,7 @@
 // Build: always inject noindex meta + Disallow robots.
 // Client report sites are not for public discovery — same rule applies on production.
-const fs = require('node:fs');
-const path = require('node:path');
+import fs from 'node:fs';
+import path from 'node:path';
 
 const outDir = 'public';
 fs.mkdirSync(outDir, { recursive: true });
